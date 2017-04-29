@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+.popup {
+	position:relative;
+	display:inline-block;
+	cursor: pointer;
+	width: 540px;
+}
+
+.popup .popuptext {
+	visibility: hidden;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	width: 540px;
+}
+
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+	visibility: visible;
+}
+
+#form-left {
+	float: left;
+}
+
+#form-right {
+	float: right;
+}
+
+#form-name {
+	float: left;
+}
+
+#form-email {
+	float: right;
+}
+
+#form {
+	width: 540px;
+	overflow: hidden;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+</style>
+</head>
+
+
+
+<body>
+
+<div class="popup" onclick="myFunction()">Sign Up For Our Newsletter!<!-this creates the text thar the popup will come from, so insert this wherever you want in on the webpage->
+	<span class="popuptext" id="myPopup">
+
+	<center>
+
+	<div id="main" style="background-color: #555;">
+		<img src="icon" style="height:150px;width:150px;"/>
+		<br />
+		<h1 style="color:white;">Keep in touch.</h1>
+		<h3 style="color:white;">Our newsletter is the best way to stay up-to-date on our projects and other information.</h3>
+		<br />
+		<p style="color:white;">Don't worry, we hate spam too.</p>
+
+	</div>
+
+
+
+
+		<div id="form">
+		<form>
+			<div id="form-left">
+				<div id="form-name">
+					<input type="text" name="name" placeholder="Name"/>
+				</div>
+				<div id="form-email">
+					<input type="email" name="email" placeholder="Email Address"/>
+				</div>
+			</div>
+			<div id="form-right">
+				<div id="form-subscribe">
+					<button type="submit" style="font-size: 16px;">Subscribe</button>
+				</div>
+			</div>
+		</form>
+		</div>
+
+	</center>
+
+	</span>
+</div>
+
+<script>
+function myFunction() {
+	var popup =
+document.getElementById("myPopup");
+	popup.classList.toggle("show");
+}
+</script>
+
+</body>
+
+
+
+</html>

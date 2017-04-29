@@ -1623,7 +1623,7 @@
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color: #4687f1;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -1644,7 +1644,7 @@
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: #4687f1;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -2416,6 +2416,16 @@
 
 /* Image */
 
+	.imgg { 
+    	width: 100%;
+    	max-width: 80%; 
+    	max-height: 80%; 
+    	
+
+ 
+	}
+
+
 	.image {
 		border-radius: 8px;
 		border: 0;
@@ -2731,7 +2741,7 @@
 	}
 
 	header.major h2:after {
-		background-color: rgba(255, 255, 255, 0.35);
+		background-color: rgba(70, 163, 253, 0.35);
 	}
 
 /* Table */
@@ -2936,7 +2946,9 @@
 				display: block;
 				font-size: 2em;
 				line-height: 1.1;
-				color: inherit !important;
+				
+
+				: inherit !important;
 				font-weight: 300;
 				letter-spacing: -0.025em;
 			}
@@ -3356,7 +3368,7 @@
 
 	#main {
 		background-color: #ffffff;
-		color: #636363;
+		color: #4687f1;
 		border-radius: 0.25em;
 	}
 
